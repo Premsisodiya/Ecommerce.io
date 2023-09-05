@@ -189,19 +189,15 @@
       <div class="container">
 
         <a href="#" class="header-logo">
-          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="200" height="36">
+          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
         </a>
 
-        <div
- class="header-search-container">
+        <div class="header-search-container">
 
           <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
-            
-          
-            
           </button>
 
         </div>
@@ -796,7 +792,7 @@
                 starting at &dollar; <b>20</b>.00
               </p>
 
-              <a href="https://cosmofeed.com/vp/64f57dce9e9120001e1532af" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Shop now</a>
 
             </div>
 
@@ -3499,7 +3495,7 @@
 
             <address class="content">
               419 State 414 Rte
-              Barwani MP, (IN), 451770, Ind
+              Beaver Dams, New York(NY), 14812, USA
             </address>
           </li>
 
@@ -3508,7 +3504,7 @@
               <ion-icon name="call-outline"></ion-icon>
             </div>
 
-            <a href="tel:+812057-5377-" class="footer-nav-link">(812)057 -5377</a>
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
           </li>
 
           <li class="footer-nav-item flex">
@@ -3516,7 +3512,7 @@
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            <a href="mailto:sisodiyap438@gmail.com" class="footer-nav-link">sisodiyap438@gmail.com</a></a>
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
           </li>
 
         </ul>
@@ -3587,101 +3583,11 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/script/script.js"></script>
 
   <!--
     - ionicon link
   -->
-  <script>
-      'use strict';
-
-// modal variables
-const modal = document.querySelector('[data-modal]');
-const modalCloseBtn = document.querySelector('[data-modal-close]');
-const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
-
-// modal function
-const modalCloseFunc = function () { modal.classList.add('closed') }
-
-// modal eventListener
-modalCloseOverlay.addEventListener('click', modalCloseFunc);
-modalCloseBtn.addEventListener('click', modalCloseFunc);
-
-
-
-
-
-// notification toast variables
-const notificationToast = document.querySelector('[data-toast]');
-const toastCloseBtn = document.querySelector('[data-toast-close]');
-
-// notification toast eventListener
-toastCloseBtn.addEventListener('click', function () {
-  notificationToast.classList.add('closed');
-});
-
-
-
-
-
-// mobile menu variables
-const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
-const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
-const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
-const overlay = document.querySelector('[data-overlay]');
-
-for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
-
-  // mobile menu function
-  const mobileMenuCloseFunc = function () {
-    mobileMenu[i].classList.remove('active');
-    overlay.classList.remove('active');
-  }
-
-  mobileMenuOpenBtn[i].addEventListener('click', function () {
-    mobileMenu[i].classList.add('active');
-    overlay.classList.add('active');
-  });
-
-  mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
-  overlay.addEventListener('click', mobileMenuCloseFunc);
-
-}
-
-
-
-
-
-// accordion variables
-const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
-const accordion = document.querySelectorAll('[data-accordion]');
-
-for (let i = 0; i < accordionBtn.length; i++) {
-
-  accordionBtn[i].addEventListener('click', function () {
-
-    const clickedBtn = this.nextElementSibling.classList.contains('active');
-
-    for (let i = 0; i < accordion.length; i++) {
-
-      if (clickedBtn) break;
-
-      if (accordion[i].classList.contains('active')) {
-
-        accordion[i].classList.remove('active');
-        accordionBtn[i].classList.remove('active');
-
-      }
-
-    }
-
-    this.nextElementSibling.classList.toggle('active');
-    this.classList.toggle('active');
-
-  });
-
-}
-  </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
